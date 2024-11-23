@@ -1,7 +1,7 @@
 const express = require('express');
-const getData = require('../controllers/getData');
+const identifyContact = require('../controllers/myController');
 
 const router = express.Router();
-router.post('/getAll', getData);
+router.post('/identify', identifyContact)
 
 module.exports = router;
